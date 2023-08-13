@@ -1,3 +1,4 @@
+import { formatDateString } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -10,6 +11,7 @@ interface Props {
     name: string;
     image: string;
     id: string;
+    username: string;
   };
   community: {
     id: string;
@@ -62,6 +64,7 @@ export default function ThreadCard({
               <h4 className="cursor-pointer text-base-semibold text-light-1">
                 {author.name}
               </h4>
+              <p className='text-small-medium text-gray-1'>@{author.username}</p>
             </Link>
 
             <p className="mt-2 text-small-regular text-light-2">{content}</p>
@@ -160,6 +163,9 @@ export default function ThreadCard({
           />
         </Link>
       )} */}
+      <p className="text-subtle-medium text-gray-1 pt-3">
+        {formatDateString(createdAt)}
+      </p>
     </article>
   );
 }
