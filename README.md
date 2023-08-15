@@ -1,7 +1,5 @@
 # Threads Clone
 
-![Project Screenshot](screenshot.png) <!-- Insert a screenshot of your project here -->
-
 A modern web application clone of a threads platform built using Next.js, Clerk, and MongoDB.
 
 ## Table of Contents
@@ -40,3 +38,26 @@ A modern web application clone of a threads platform built using Next.js, Clerk,
    ```bash
    git clone https://github.com/your-username/threads-clone.git
    cd threads-clone
+2. Install dependencies:
+   ```bash
+   npm install
+
+## Usage
+
+- Configure Clerk authentication credentials.
+- Set up your MongoDB Atlas cloud database and update connection settings.
+- Start the development server:
+  ```bash
+  npm run dev
+
+## Deployment
+
+- Automated deployment is established using GitHub Actions. Commits to the main branch trigger automatic deployments on Vercel.
+
+## Skills Demonstrated
+
+- Full-stack development with Next.js and TypeScript.
+- Implementing secure user authentication with Clerk.
+- Utilizing MongoDB for data storage and retrieval.
+- Styling and responsiveness using Tailwind CSS.
+- Setting up automated deployment using GitHub Actions and Vercel.
